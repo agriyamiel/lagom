@@ -1,5 +1,6 @@
 .header {
-  background: #fd405e;
+  background: url(/img/header_girl.png) #fd405e;
+  // background: #fd405e;
   min-height: 328px;
 }
 
@@ -145,7 +146,6 @@
 
 @media only screen and(min-width:768px) {
   .header {
-    background: url(/img/header_girl.png) #fd405e;
     min-height: 350px;
     background-size: 300px auto;
     background-repeat: no-repeat;
