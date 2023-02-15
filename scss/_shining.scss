@@ -1,0 +1,134 @@
+.shining{
+    position: relative;
+    border-top: 1px solid #ececec;
+    margin: 30px 0;
+}
+
+.shining::before{
+    position: absolute;
+    content: "" ;
+    width: 50px;
+    height: 50px;
+    background: url(/img/diamond.png);
+    background-size:100% 100% ;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.shining-inner-photo{
+    display: none;
+}
+
+.shining-inner-info{
+    p{
+        font-size: 38px;
+        font-family: 'Playfair Display';
+        line-break: 40px;
+        margin-top: 40px;
+    }
+
+    p:nth-child(2){
+        font-size: 17px;
+        font-family: 'Roboto';
+        color: #727272;
+        margin: 30px 0;
+        line-height: 25px;
+        font-weight: bolder;
+    }
+}
+
+.shining-inner-info-link{
+    display: inline-block;
+    padding: 15px 50px;
+    text-decoration: none;
+    
+    span{
+        font-size: 14px;
+        font-family: 'Poppins';
+        color: #fd405e;
+        position: relative;
+    }
+}
+
+.shining-inner-info-link span::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url(../images/arrow.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    top: -20%;
+    left: 50px;
+    transform: translateX(-50%);
+}
+
+.shining-inner-info-link span::before{
+    background: url(/img/arrow_red.png);
+    background-repeat: no-repeat;
+    left: -20px;
+    top: 2px;
+}
+
+@media only screen and(min-width:768px){
+    .shining{
+        min-height: 380px;
+    }
+
+    .shining-inner-content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .shining-inner-photo{
+        display: block;
+        width: 400px;
+
+        img{
+            max-width: 90%;
+            height: auto;
+        }
+    }
+
+    .shining-inner-info{
+        width: 326px;
+    }
+}
+
+@media only screen and(min-width:1024px){
+    .shining{
+        min-width: 400px;
+    }
+
+    .shining-inner-photo{
+        display: block;
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .shining-inner-conten{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .shining-inner-info{
+        width: 530px;
+    }
+
+    .shining-inner-info-title{
+        flex-basis: 615px;
+        margin-top: 85px;
+    }
+
+    .shining-inner-info-text{
+        line-height: 35px;
+        margin-top: 50px;
+    }
+}

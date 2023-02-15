@@ -1,0 +1,133 @@
+.update {
+  min-height: 783px;
+  background-color: #f6f6f6;
+}
+
+.update-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.update-inner-title {
+  text-align: center;
+  font-size: 38px;
+  font-family: "Playfair Display";
+  margin: 20px 0;
+}
+
+.update-inner-block {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.update-inner-block-photo {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.update-inner-block-info {
+  padding: 20px;
+  p {
+    color: #727272;
+    font-size: 22px;
+    font-family: "Playfair Display";
+  }
+
+  p:nth-child(2) {
+    font-size: 17px;
+    font-family: "Roboto";
+    color: #a1a1a1;
+    margin-top: 15px;
+  }
+}
+
+.update-inner-photos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.update-inner-photos-item {
+  flex-basis: 49%;
+  margin-bottom: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.update-inner-photos-item-img {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.update-inner-photos-text {
+  p {
+    padding: 15px 5px;
+    color: #727272;
+    font-size: 18px;
+    font-family: "Playfair Display";
+  }
+}
+
+.update-inner-link {
+  text-align: right;
+  margin: 40px 0 75px 0;
+}
+
+.update-inner-link-blog {
+  padding: 15px 50px;
+  position: relative;
+  font-family: "Poppins";
+  font-size: 14px;
+  text-decoration: none;
+  color: #fd405e;
+}
+
+.update-inner-link-blog span {
+  position: relative;
+}
+
+.update-inner-link-blog span::before {
+  content: url(/img/arrow_red.png);
+  position: absolute;
+  left: -40px;
+  top: 10%
+}
+
+@media only screen and (min-width: 768px) {
+  .update-inner {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  .update-inner-title {
+    margin: 50px;
+  }
+  .update-inner-block {
+    height: 447px;
+    flex-basis: 50%;
+    margin-bottom: 10px;
+  }
+
+  .update-inner-photos {
+    flex-basis: 49%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .update-inner {
+    gap: 30px;
+  }
+  .update-inner-block {
+    height: 480px;
+  }
+
+  .update-inner-photos-item {
+    flex-basis: 47%;
+  }
+}

@@ -1,0 +1,86 @@
+.biggest {
+  min-height: 887px;
+  margin-top: 50px;
+}
+
+.biggest-inner-title {
+  p {
+    padding: 0 9px;
+    font-family: "Playfair Display";
+    font-size: 38px;
+  }
+}
+
+.biggest-inner-info {
+  padding: 0 10px;
+  margin: 30px 0;
+  font-family: "Roboto";
+  font-size: 17px;
+  color: #727272;
+  line-height: 25px;
+  font-weight: 900;
+}
+
+.biggest-inner-jewel {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #fff;
+  min-height: 166px;
+  min-width: 131px;
+
+  p {
+    font-family: "Playfair Display";
+    font-size: 17px;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .biggest {
+    min-height: 418px;
+    background: url(/img/biggest_girl.png);
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    background-position: 100% 100%;
+  }
+
+  .biggest-inner-jewel{
+    box-shadow: 0 0 15px 0 #ececec;
+  }
+
+  .biggest-inner-content-jewel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .biggest-inner-title {
+    p {
+      width: 437px;
+    }
+  }
+
+  .biggest-inner-info {
+    width: 430px;
+  }
+}
+
+@media only screen and(min-width:1024px){
+  .biggest{
+    min-height: 500px;
+    background-size: 60% 100%;
+    background-position: 80%;
+  }
+
+  .biggest-inner-info{
+    width: 570px;
+  }
+
+  .biggest-inner-content-jewel{
+    gap: 32px;
+  }
+
+  .biggest-inner-jewel{
+    min-width: 150px;
+  }
+}
